@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 794 956"  >
+<!-- tyle="transform: scale(0.8); transform-origin: top left;"  -->
+  <!-- Background -->
+  <rect x="0" y="0" width="794" height="965" fill="none"/>
+
+  <!-- Document Shadow -->
+  <defs>
+    <filter id="docShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceAlpha" dx="0" dy="4" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="8" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+
+  <!-- Document Container with Shadow -->
+  <g filter="url(#docShadow)">
+    <rect x="30" y="30" width="734" height="905" rx="20" ry="20" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  </g>
+
+  <!-- Header Placeholder -->
+  <rect x="60" y="60" width="674" height="50" fill="#d0d7de" rx="10" ry="10"/>
+
+  <!-- Subheader Placeholder -->
+  <rect x="60" y="130" width="500" height="30" fill="#e0e0e0" rx="8" ry="8"/>
+
+  <!-- Paragraph Lines -->
+  <!-- Normal Paragraphs -->
+  <g fill="#f0f4f8">
+    <rect x="60" y="180" width="674" height="15" rx="5" ry="5"/>
+    <rect x="60" y="205" width="650" height="15" rx="5" ry="5"/>
+  </g>
+  <!-- Highlighted Paragraphs -->
+  <g fill="#fff9b1">
+    <rect x="60" y="230" width="630" height="15" rx="5" ry="5"/>
+    <rect x="60" y="255" width="674" height="15" rx="5" ry="5"/>
+  </g>
+  <!-- Continue with Normal Paragraphs -->
+  <g fill="#f0f4f8">
+    <rect x="60" y="280" width="660" height="15" rx="5" ry="5"/>
+    <!-- Add more lines as needed -->
+  </g>
+
+  <!-- Image Placeholder -->
+  <rect x="60" y="320" width="350" height="250" fill="#e0e0e0" rx="15" ry="15"/>
+
+  <!-- Caption Placeholder -->
+  <rect x="60" y="590" width="350" height="15" fill="#fff9b1" rx="5" ry="5"/>
+
+  <!-- More Paragraph Lines -->
+  <!-- Normal Paragraphs -->
+  <g fill="#f0f4f8">
+    <rect x="60" y="620" width="674" height="15" rx="5" ry="5"/>
+  </g>
+  <!-- Highlighted Paragraphs -->
+  <g fill="#fff9b1">
+    <rect x="60" y="645" width="660" height="15" rx="5" ry="5"/>
+  </g>
+  <!-- Continue with Normal Paragraphs -->
+  <g fill="#f0f4f8">
+    <rect x="60" y="670" width="630" height="15" rx="5" ry="5"/>
+    <!-- Add more lines as needed -->
+  </g>
+    <g fill="#f0f4f8">
+    <rect x="60" y="645" width="660" height="15" rx="5" ry="5"/>
+  </g>
+</svg>

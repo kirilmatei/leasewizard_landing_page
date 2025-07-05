@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="1200" fill="#1f2937"/>
+
+  <!-- Table Shadow -->
+  <defs>
+    <filter id="tableShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceAlpha" dx="0" dy="4" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="8" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+
+  <!-- Table Container with Shadow -->
+  <g filter="url(#tableShadow)">
+    <rect x="100" y="100" width="1400" height="1000" rx="20" ry="20" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  </g>
+
+  <!-- Header Row -->
+  <rect x="100" y="100" width="1400" height="80" fill="#f5f7fa" rx="20" ry="20"/>
+
+  <!-- Horizontal Lines -->
+  <g stroke="#e0e0e0" stroke-width="1">
+    <line x1="100" y1="180" x2="1500" y2="180"/>
+    <line x1="100" y1="280" x2="1500" y2="280"/>
+    <line x1="100" y1="380" x2="1500" y2="380"/>
+    <line x1="100" y1="480" x2="1500" y2="480"/>
+    <line x1="100" y1="580" x2="1500" y2="580"/>
+    <line x1="100" y1="680" x2="1500" y2="680"/>
+    <line x1="100" y1="780" x2="1500" y2="780"/>
+    <line x1="100" y1="880" x2="1500" y2="880"/>
+    <line x1="100" y1="980" x2="1500" y2="980"/>
+  </g>
+
+  <!-- Vertical Lines -->
+  <g stroke="#e0e0e0" stroke-width="1">
+    <line x1="400" y1="100" x2="400" y2="1100"/>
+    <line x1="800" y1="100" x2="800" y2="1100"/>
+    <line x1="1200" y1="100" x2="1200" y2="1100"/>
+  </g>
+
+  <!-- Placeholder Rectangles in Header -->
+  <g fill="#d0d7de">
+    <rect x="130" y="120" width="140" height="40" rx="5" ry="5"/>
+    <rect x="430" y="120" width="140" height="40" rx="5" ry="5"/>
+    <rect x="830" y="120" width="140" height="40" rx="5" ry="5"/>
+    <rect x="1230" y="120" width="140" height="40" rx="5" ry="5"/>
+  </g>
+
+  <!-- Placeholder Rectangles in Rows -->
+  <!-- Row 1 -->
+  <g fill="#f0f4f8">
+    <rect x="130" y="220" width="240" height="30" rx="5" ry="5"/>
+    <rect x="430" y="220" width="240" height="30" rx="5" ry="5"/>
+    <rect x="830" y="220" width="240" height="30" rx="5" ry="5"/>
+    <rect x="1230" y="220" width="240" height="30" rx="5" ry="5"/>
+  </g>
+
+  <!-- Row 2 -->
+  <g fill="#f0f4f8">
+    <rect x="130" y="320" width="240" height="30" rx="5" ry="5"/>
+    <rect x="430" y="320" width="240" height="30" rx="5" ry="5"/>
+    <rect x="830" y="320" width="240" height="30" rx="5" ry="5"/>
+    <rect x="1230" y="320" width="240" height="30" rx="5" ry="5"/>
+  </g>
+
+ <g fill="#f0f4f8">
+    <rect x="130" y="320" width="240" height="30" rx="5" ry="5"/>
+    <rect x="430" y="320" width="240" height="30" rx="5" ry="5"/>
+    <rect x="830" y="320" width="240" height="30" rx="5" ry="5"/>
+    <rect x="1230" y="320" width="240" height="30" rx="5" ry="5"/>
+  </g>
+  
+</svg>
