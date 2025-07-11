@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import ExtractDataCard from "@/components/ExtractDataCard";
+import LazyVideo from "@/components/LazyVideo";
 
 export default function Home() {
     return (
@@ -10,23 +11,23 @@ export default function Home() {
             <main className="p-5 ">
 
                 {/* Hero Section */}
-                <section id="hero-section">
-                    <div className="bg-gray-900 pt-22">
-                        <div id="hero" className="relative w-full flex justify-center overflow-hidden py-10 rounded-2xl" style={{ backgroundImage: 'url("/images/hero_background.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <section id="hero-section" className="h-screen">
+                    <div className="bg-gray-900 h-full lg:pt-20 ">
+                        <div id="hero" className="relative w-full h-full flex justify-center overflow-hidden rounded-2xl" style={{ backgroundImage: 'url("/images/hero_background.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             {/* <img src="/images/cloud.svg" className="absolute w-full z-0 object-cover top-60 lg:-top-24" alt="" /> */}
 
-                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 z-10 lg:h-screen">
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 z-10 h-full items-center py-8">
 
                                 {/* Hero Text Section */}
-                                <section className="text-white py-8 px-4 my-8 lg:py-16 lg:px-6 lg:my-16 lg:col-start-3 lg:col-span-8">
-                                    <div className="container mx-auto text-center">
+                                <section className="text-white px-4 lg:px-6 lg:col-start-3 lg:col-span-8">
+                                    <div className="container mx-auto text-center mb-8">
                                         {/* Main Heading */}
-                                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold tracking-tight text-transparent bg-gradient-to-r from-blue-400 via-white to-cyan-300 bg-clip-text">
-                                            AI Lease Contract Abstractions
+                                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold tracking-tight text-transparent bg-gradient-to-r from-blue-400 via-white to-cyan-300 bg-clip-text mb-4">
+                                            AI Lease Contract Management
                                         </h2>
                                         {/* Description */}
-                                        <p className="text-base sm:text-lg font-light mb-6 lg:mb-8 text-gray-200 max-w-xl lg:max-w-3xl mx-auto px-2">
-                                            Abstract real estate lease contract with AI and see all critical dates, important paragraphs, and terms in seconds.
+                                        <p className="text-base sm:text-lg font-light mb-6 text-gray-200 max-w-xl lg:max-w-3xl mx-auto px-2">
+                                            Abstract, Analyze, and Manage real estate lease contracts with AI and see all critical dates, gaps, and terms in seconds.
                                         </p>
                                         {/* CTA Button */}
                                         <Link href="/demo">
@@ -40,12 +41,20 @@ export default function Home() {
                                     </div>
                                 </section>
 
-                                {/* Hero Image Section */}
-                                {/* <div id="hero-image" className="flex flex-col gap-6 my-10 text-white lg:col-start-3 lg:col-span-8">
-                <div>
-                  <img className="rounded-md w-full" src="/images/product_demo.png" alt="" />
-                </div>
-              </div> */}
+                                {/* Hero Video Section */}
+                                <div id="hero-video" className="flex flex-col text-white lg:col-start-3 lg:col-span-8">
+                                    <div className="relative bg-white/15 backdrop-blur-sm border border-b-0 border-blue-400/70 rounded-2xl rounded-b-none pt-4 px-4 pb-0 shadow-2xl overflow-hidden">
+                                        {/* Gradient overlay for better visual integration */}
+                                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10 pointer-events-none"></div>
+
+                                        <div className="relative z-10">
+                                            <LazyVideo
+                                                src="/static/videos/portfolio.mp4"
+                                                className="rounded-lg rounded-b-none w-full shadow-xl border border-gray-700/50"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
 
 
                             </div>
@@ -191,32 +200,14 @@ export default function Home() {
                         </div>
 
                         {/* Video Container */}
-                        <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-gray-800 via-gray-800 to-gray-900 px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670] lg:p-0 shadow-2xl border border-gray-700 group hover:border-blue-500/30 transition-all duration-500">
-                            {/* Animated Background Elements */}
-                            <div className="absolute inset-0 opacity-10">
-                                <div className="video-circle-1"></div>
-                                <div className="video-circle-2"></div>
-                                <div className="video-circle-3"></div>
-                                {/* Video particles */}
-                                <div className="video-particle"></div>
-                                <div className="video-particle"></div>
-                                <div className="video-particle"></div>
-                                <div className="video-particle"></div>
-                            </div>
+                        <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670] lg:p-0 shadow-2xl border border-gray-700">
 
-                            {/* Placeholder for video - replace with actual video */}
-                            <div className="relative bottom-0 left-1/2 z-10 w-auto -translate-x-1/2 translate-y-1 overflow-hidden rounded-t-lg lg:absolute lg:h-[90%] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center min-h-[250px] sm:min-h-[300px] md:min-h-[400px] border border-gray-600">
-                                <div className="text-center text-gray-300">
-                                    <div className="mb-4 relative inline-block">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-12 h-12 sm:w-16 sm:h-16 text-blue-400 video-icon-animation">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="m15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-                                        </svg>
-                                        <div className="absolute inset-0 rounded-full bg-blue-400/10 video-icon-glow"></div>
-                                    </div>
-                                    <p className="text-lg sm:text-xl font-semibold mb-2">Demo Video Coming Soon</p>
-                                    <p className="text-xs sm:text-sm text-gray-400">See LeaseWizard in action</p>
-                                </div>
+                            {/* Video Container */}
+                            <div className="relative bottom-0 left-1/2 z-10 -translate-x-1/2  overflow-hidden rounded-t-lg lg:absolute w-[90%]  h-[100%] flex items-center justify-center lg:pt-20 ">
+                                <LazyVideo
+                                    src="/static/videos/abstraction.mp4"
+                                    className="rounded-lg w-full object-contain"
+                                />
                             </div>
 
                             {/* Background Effects */}
@@ -250,31 +241,14 @@ export default function Home() {
                         </div>
 
                         {/* Video Container */}
-                        <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-gray-800 via-gray-800 to-gray-900 px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670] lg:p-0 shadow-2xl border border-gray-700 group hover:border-red-500/30 transition-all duration-500">
-                            {/* Animated Background Elements */}
-                            <div className="absolute inset-0 opacity-10">
-                                <div className="gap-circle-1"></div>
-                                <div className="gap-circle-2"></div>
-                                <div className="gap-circle-3"></div>
-                                {/* Gap particles */}
-                                <div className="gap-particle"></div>
-                                <div className="gap-particle"></div>
-                                <div className="gap-particle"></div>
-                                <div className="gap-particle"></div>
-                            </div>
+                        <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670] lg:p-0 shadow-2xl border border-gray-700">
 
-                            {/* Placeholder for video - replace with actual video */}
-                            <div className="relative bottom-0 left-1/2 z-10 w-auto -translate-x-1/2 translate-y-1 overflow-hidden rounded-t-lg lg:absolute lg:h-[90%] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center min-h-[250px] sm:min-h-[300px] md:min-h-[400px] border border-gray-600">
-                                <div className="text-center text-gray-300">
-                                    <div className="mb-4 relative inline-block">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-12 h-12 sm:w-16 sm:h-16 text-red-400 gap-icon-animation">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.248-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
-                                        </svg>
-                                        <div className="absolute inset-0 rounded-full bg-red-400/10 gap-icon-glow"></div>
-                                    </div>
-                                    <p className="text-lg sm:text-xl font-semibold mb-2">Demo Video Coming Soon</p>
-                                    <p className="text-xs sm:text-sm text-gray-400">See LeaseWizard in action</p>
-                                </div>
+                            {/* Video Container */}
+                            <div className="relative bottom-0 left-1/2 z-10 -translate-x-1/2  overflow-hidden rounded-t-lg lg:absolute w-[90%]  h-[100%] flex items-center justify-center lg:pt-20 ">
+                                <LazyVideo
+                                    src="/static/videos/gap.mp4"
+                                    className="rounded-lg w-full object-contain"
+                                />
                             </div>
 
                             {/* Background Effects */}
