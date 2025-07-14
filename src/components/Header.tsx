@@ -47,6 +47,7 @@ export default function Header() {
                             viewBox="0 0 120 13"
                             xmlns="http://www.w3.org/2000/svg"
                         >
+
                             <text x="0" y="10" fontSize="12" fontFamily="Poppins, sans-serif" fontWeight="600">
                                 LeaseWizard
                             </text>
@@ -74,7 +75,7 @@ export default function Header() {
                         <li>
                             <Link
                                 className="transition-colors duration-300 p-2 hover:text-white hover:bg-gray-800 rounded-md motion-reduce:transition-none"
-                                href="/demo"
+                                href="/contact"
                             >
                                 Demo
                             </Link>
@@ -136,34 +137,33 @@ export default function Header() {
                     {/* Mobile Menu Button */}
                     <div className="contents">
                         <button
-                            className="relative size-6 lg:hidden text-white"
+                            className="relative p-2 lg:hidden text-white hover:text-blue-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-lg"
                             aria-expanded={isMobileMenuOpen}
                             aria-controls="mobile-menu"
-                            aria-label="Menu"
+                            aria-label="Toggle mobile menu"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
-                            <svg
-                                className={`hamburger -ml-2 -mt-2 size-10 transition-transform duration-300 ${isMobileMenuOpen ? 'rotate-45' : ''}`}
-                                viewBox="0 0 100 100"
-                                width="24"
-                                xmlns="http://www.w3.org/2000/svg"
-                                strokeWidth="5.5"
-                                fill="none"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    className={`line top transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}
-                                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+                            <div className="relative w-6 h-6 flex items-center justify-center">
+                                {/* Hamburger Lines */}
+                                <span
+                                    className={`absolute w-6 h-0.5 bg-current transform transition-all duration-300 ease-in-out ${isMobileMenuOpen
+                                        ? 'rotate-45 translate-y-0'
+                                        : '-translate-y-2'
+                                        }`}
                                 />
-                                <path
-                                    className={`line transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}
-                                    d="m 70,50 h -40"
+                                <span
+                                    className={`absolute w-6 h-0.5 bg-current transform transition-all duration-300 ease-in-out ${isMobileMenuOpen
+                                        ? 'opacity-0'
+                                        : 'opacity-100'
+                                        }`}
                                 />
-                                <path
-                                    className={`line bottom transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}
-                                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+                                <span
+                                    className={`absolute w-6 h-0.5 bg-current transform transition-all duration-300 ease-in-out ${isMobileMenuOpen
+                                        ? '-rotate-45 translate-y-0'
+                                        : 'translate-y-2'
+                                        }`}
                                 />
-                            </svg>
+                            </div>
                         </button>
                     </div>
                 </div>
@@ -175,7 +175,7 @@ export default function Header() {
                         className="absolute top-full left-0 right-0 mt-2 bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg shadow-2xl border border-gray-700 lg:hidden backdrop-blur-sm"
                     >
                         <div className="flex flex-col p-4 space-y-2">
-                            <Link
+                            {/* <Link
                                 className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition-colors duration-300"
                                 href="/pricing"
                                 onClick={() => setIsMobileMenuOpen(false)}
@@ -195,14 +195,14 @@ export default function Header() {
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Demo
-                            </Link>
-                            <Link
+                            </Link> */}
+                            {/* <Link
                                 className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition-colors duration-300"
                                 href="/blog"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Blog
-                            </Link>
+                            </Link> */}
                             <Link
                                 className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition-colors duration-300"
                                 href="/contact"
@@ -220,7 +220,7 @@ export default function Header() {
                                 </Link>
                                 <Link
                                     className="block px-3 py-2 bg-blue-600 text-white hover:bg-blue-500 rounded-md transition-colors duration-300 mt-2"
-                                    href="/demo"
+                                    href="/contact"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     Try Demo

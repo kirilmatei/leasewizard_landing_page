@@ -11,16 +11,15 @@ export default function Home() {
             <main className="p-5 ">
 
                 {/* Hero Section */}
-                <section id="hero-section" className="h-screen">
-                    <div className="bg-gray-900 h-full lg:pt-20 ">
+                <section id="hero-section" className="lg:h-screen">
+                    <div className="bg-gray-900 h-full pt-20">
                         <div id="hero" className="relative w-full h-full flex justify-center overflow-hidden rounded-2xl" style={{ backgroundImage: 'url("/images/hero_background.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             {/* <img src="/images/cloud.svg" className="absolute w-full z-0 object-cover top-60 lg:-top-24" alt="" /> */}
 
-                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 z-10 h-full items-center py-8">
-
+                            <div className="flex flex-col lg:grid lg:grid-cols-12 gap-3 z-10 h-full items-center justify-between pt-8 ">
                                 {/* Hero Text Section */}
                                 <section className="text-white px-4 lg:px-6 lg:col-start-3 lg:col-span-8">
-                                    <div className="container mx-auto text-center mb-8">
+                                    <div className="container mx-auto text-center mb-4 mb-50 lg:mb-8">
                                         {/* Main Heading */}
                                         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold tracking-tight text-transparent bg-gradient-to-r from-blue-400 via-white to-cyan-300 bg-clip-text mb-4">
                                             AI Lease Contract Management
@@ -30,7 +29,7 @@ export default function Home() {
                                             Abstract, Analyze, and Manage real estate lease contracts with AI and see all critical dates, gaps, and terms in seconds.
                                         </p>
                                         {/* CTA Button */}
-                                        <Link href="/demo">
+                                        <Link href="/contact">
                                             <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold py-3 px-6 sm:py-4 sm:px-10 rounded-full shadow-2xl hover:shadow-blue-500/25 hover:from-blue-500 hover:to-cyan-500 transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 mx-auto group hover:scale-105 text-sm sm:text-base">
                                                 Try for free
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,8 +41,8 @@ export default function Home() {
                                 </section>
 
                                 {/* Hero Video Section */}
-                                <div id="hero-video" className="flex flex-col text-white lg:col-start-3 lg:col-span-8">
-                                    <div className="relative bg-white/15 backdrop-blur-sm border border-b-0 border-blue-400/70 rounded-2xl rounded-b-none pt-4 px-4 pb-0 shadow-2xl overflow-hidden">
+                                <div id="hero-video" className="flex flex-col text-white lg:col-start-3 lg:col-span-8 order-last lg:order-none">
+                                    <div className="relative bg-white/15 backdrop-blur-sm border border-b-0 border-blue-400/70 rounded-2xl rounded-b-none pt-2 lg:pt-4 px-2 lg:px-4 pb-0 shadow-2xl overflow-hidden">
                                         {/* Gradient overlay for better visual integration */}
                                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10 pointer-events-none"></div>
 
@@ -55,9 +54,8 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -200,18 +198,18 @@ export default function Home() {
                         </div>
 
                         {/* Video Container */}
-                        <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670] lg:p-0 shadow-2xl border border-gray-700">
+                        <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670]  lg:h-[600px] lg:p-0 shadow-2xl border border-gray-700">
 
                             {/* Video Container */}
-                            <div className="relative bottom-0 left-1/2 z-10 -translate-x-1/2  overflow-hidden rounded-t-lg lg:absolute w-[90%]  h-[100%] flex items-center justify-center lg:pt-20 ">
+                            <div className="relative bottom-0 right-0 left-auto sm:left-1/2 sm:-translate-x-1/2 z-10 overflow-hidden rounded-t-lg w-[200%] sm:w-[90%] h-full flex items-center justify-end sm:justify-center lg:absolute lg:pt-20">
                                 <LazyVideo
                                     src="/static/videos/abstraction.mp4"
-                                    className="rounded-lg w-full object-contain"
+                                    className="rounded-lg w-full object-cover object-right"
                                 />
                             </div>
 
                             {/* Background Effects */}
-                            <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 object-cover">
+                            <div aria-hidden="true" className=" pointer-events-none absolute inset-0 z-0 object-cover">
                                 {/* Noise texture overlay */}
                                 <div className="absolute -inset-2">
                                     <div className="pointer-events-none absolute inset-0 opacity-30 z-[1] p-20"
@@ -244,10 +242,10 @@ export default function Home() {
                         <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670] lg:p-0 shadow-2xl border border-gray-700">
 
                             {/* Video Container */}
-                            <div className="relative bottom-0 left-1/2 z-10 -translate-x-1/2  overflow-hidden rounded-t-lg lg:absolute w-[90%]  h-[100%] flex items-center justify-center lg:pt-20 ">
+                            <div className="relative bottom-0 right-0 left-auto sm:left-1/2 sm:-translate-x-1/2 z-10 overflow-hidden rounded-t-lg w-[200%] sm:w-[90%] h-full flex items-center justify-end sm:justify-center lg:absolute lg:pt-20">
                                 <LazyVideo
                                     src="/static/videos/gap.mp4"
-                                    className="rounded-lg w-full object-contain"
+                                    className="rounded-lg w-full object-cover object-right lg:object-contain"
                                 />
                             </div>
 
@@ -285,10 +283,10 @@ export default function Home() {
                         <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670] lg:p-0 shadow-2xl border border-gray-700">
 
                             {/* Video Container */}
-                            <div className="relative bottom-0 left-1/2 z-10 -translate-x-1/2  overflow-hidden rounded-t-lg lg:absolute w-[90%]  h-[100%] flex items-center justify-center lg:pt-20 ">
+                            <div className="relative bottom-0 right-0 left-auto sm:left-1/2 sm:-translate-x-1/2 z-10 overflow-hidden rounded-t-lg w-[200%] sm:w-[90%] h-full flex items-center justify-end sm:justify-center lg:absolute lg:pt-20">
                                 <LazyVideo
                                     src="/static/videos/ai.mp4"
-                                    className="rounded-lg w-full object-contain"
+                                    className="rounded-lg w-full object-cover object-right lg:object-contain"
                                 />
                             </div>
 
