@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import ExtractDataCard from "@/components/ExtractDataCard";
@@ -459,20 +458,20 @@ export default function Home() {
                                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 794 956" className="absolute top-0 left-0 w-full h-full extract-animation-1 z-20">
                                             <rect x="50" y="220" width="700" height="65" fill="#fff9b1" rx="12" ry="12" className="highlight-box" stroke="#fbbf24" strokeWidth="3" />
                                             <text x="70" y="245" fontFamily="Arial, sans-serif" fontSize="18" fill="#1f2937" className="highlight-text font-medium">
-                                                (Page 11,§3) "Option to extend the term of this Lease for an additional
+                                                (Page 11,§3) &quot;Option to extend the term of this Lease for an additional
                                             </text>
                                             <text x="70" y="268" fontFamily="Arial, sans-serif" fontSize="18" fill="#1f2937" className="highlight-text font-medium">
-                                                period of five (5) years"
+                                                period of five (5) years&quot;
                                             </text>
                                         </svg>
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 794 956" className="absolute top-0 left-0 w-full h-full extract-animation-2 z-20">
                                             <rect x="50" y="580" width="700" height="65" fill="#fff9b1" rx="12" ry="12" className="highlight-box" stroke="#fbbf24" strokeWidth="3" />
                                             <text x="70" y="605" fontFamily="Arial, sans-serif" fontSize="18" fill="#1f2937" className="highlight-text font-medium">
-                                                (Page 26,§5) "The Tenant may terminate this Lease with 90 days'
+                                                (Page 26,§5) &quot;The Tenant may terminate this Lease with 90 days&apos;
                                             </text>
                                             <text x="70" y="628" fontFamily="Arial, sans-serif" fontSize="18" fill="#1f2937" className="highlight-text font-medium">
-                                                prior written notice."
+                                                prior written notice.&quot;
                                             </text>
                                         </svg>
                                     </div>
