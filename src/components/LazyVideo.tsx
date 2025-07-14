@@ -5,7 +5,7 @@ import { useRef, useEffect } from 'react';
 interface LazyVideoProps {
     src: string;
     className?: string;
-    [key: string]: any; // For additional video props
+    [key: string]: unknown; // For additional video props
 }
 
 export default function LazyVideo({ src, className = '', ...props }: LazyVideoProps) {

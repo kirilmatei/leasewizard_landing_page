@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -31,13 +32,11 @@ export default function Header() {
                         className="relative flex w-fit items-center gap-2 overflow-hidden lg:px-3"
                     >
                         <div className="pointer-events-none relative -ml-0.5 size-6 lg:-ml-1 lg:mr-px lg:size-8">
-                            <img
+                            <Image
                                 alt="LeaseWizard Logo"
-                                width="32"
-                                height="32"
-                                decoding="async"
+                                width={32}
+                                height={32}
                                 className="absolute transition-opacity duration-500 rounded-md"
-                                style={{ color: "transparent" }}
                                 src="/static/logos/favicon.png"
                             />
                         </div>

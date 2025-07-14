@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import ExtractDataCard from "@/components/ExtractDataCard";
@@ -405,10 +406,12 @@ export default function Home() {
                                         </div>
 
                                         {/* Background SVG */}
-                                        <img
+                                        <Image
                                             src="/mockup_table.svg"
                                             alt="Table Mockup"
-                                            className="absolute inset-0 w-[110%] h-full object-cover z-10"
+                                            fill
+                                            className="object-cover z-10"
+                                            style={{ width: '110%' }}
                                         />
                                         {/* ExtractDataCard on top */}
                                         <div className="relative z-20 transform -translate-x-6 translate-y-1">
@@ -448,9 +451,11 @@ export default function Home() {
                                         </div>
 
                                         {/* Background Document SVG */}
-                                        <img
+                                        <Image
                                             src="/mockup_doc.svg"
                                             alt="Document Mockup"
+                                            width={500}
+                                            height={400}
                                             className="relative left-0 h-auto object-cover w-[120%] max-w-none z-10"
                                         />
 
@@ -748,22 +753,22 @@ export default function Home() {
                                 <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
                                     {/* Icon 1 */}
                                     <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-3 sm:p-4 rounded-full group transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg hover:shadow-blue-500/25 relative border border-gray-600 hover:border-blue-500/30">
-                                        <img src="/static/logos/sap.png" alt="SAP" className="w-8 h-8 sm:w-10 sm:h-10" />
+                                        <Image src="/static/logos/sap.png" alt="SAP" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10" />
                                         <span className="absolute bottom-full mb-2 w-max px-2 sm:px-3 py-1 sm:py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs sm:text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 font-medium">SAP</span>
                                     </div>
                                     {/* Icon 2 */}
                                     <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-3 sm:p-4 rounded-full group transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg hover:shadow-purple-500/25 relative border border-gray-600 hover:border-purple-500/30">
-                                        <img src="/static/logos/ms-share-point.png" alt="MS SharePoint" className="w-8 h-8 sm:w-10 sm:h-10" />
+                                        <Image src="/static/logos/ms-share-point.png" alt="MS SharePoint" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10" />
                                         <span className="absolute bottom-full mb-2 w-max px-2 sm:px-3 py-1 sm:py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs sm:text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 font-medium">MS SharePoint</span>
                                     </div>
                                     {/* Icon 3 */}
                                     <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-3 sm:p-4 rounded-full group transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg hover:shadow-green-500/25 relative border border-gray-600 hover:border-green-500/30">
-                                        <img src="https://img.icons8.com/color/48/slack-new.png" alt="Slack" className="w-8 h-8 sm:w-10 sm:h-10" />
+                                        <Image src="https://img.icons8.com/color/48/slack-new.png" alt="Slack" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10" />
                                         <span className="absolute bottom-full mb-2 w-max px-2 sm:px-3 py-1 sm:py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs sm:text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 font-medium">Slack</span>
                                     </div>
                                     {/* Icon 4 */}
                                     <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-3 sm:p-4 rounded-full group transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg hover:shadow-cyan-500/25 relative border border-gray-600 hover:border-cyan-500/30">
-                                        <img src="/static/logos/OneDrive.png" alt="OneDrive" className="w-8 h-8 sm:w-10 sm:h-10" />
+                                        <Image src="/static/logos/OneDrive.png" alt="OneDrive" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10" />
                                         <span className="absolute bottom-full mb-2 w-max px-2 sm:px-3 py-1 sm:py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs sm:text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 font-medium">OneDrive</span>
                                     </div>
                                 </div>

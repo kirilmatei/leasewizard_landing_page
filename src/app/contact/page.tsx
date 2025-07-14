@@ -40,7 +40,7 @@ export default function Contact() {
                 subject: '',
                 message: ''
             });
-        } catch (error) {
+        } catch {
             setSubmitStatus('error');
         } finally {
             setIsSubmitting(false);
@@ -59,7 +59,7 @@ export default function Contact() {
                             Get in Touch
                         </h1>
                         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                            Ready to transform your lease abstraction process? We'd love to hear from you.
+                            Ready to transform your lease abstraction process? We&apos;d love to hear from you.
                             Reach out to our team and discover how LeaseWizard can streamline your workflow.
                         </p>
                     </div>
@@ -255,7 +255,7 @@ export default function Contact() {
                                 {submitStatus === 'success' && (
                                     <div className="text-center p-4 bg-green-900/20 border border-green-500/30 rounded-lg">
                                         <p className="text-green-400 font-medium">
-                                            ✓ Message sent successfully! We'll get back to you within 24 hours.
+                                            ✓ Message sent successfully! We&apos;ll get back to you within 24 hours.
                                         </p>
                                     </div>
                                 )}

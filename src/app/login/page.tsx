@@ -23,17 +23,17 @@ export default function Login() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSigningIn(true);
-        
+
         try {
             // Simulate authentication - in real implementation, this would call your auth API
             await new Promise(resolve => setTimeout(resolve, 2000));
-            
+
             // For demo purposes, show user doesn't exist then redirect to contact
             setAuthStatus('error');
             setTimeout(() => {
                 window.location.href = '/contact';
             }, 3000);
-        } catch (error) {
+        } catch {
             setAuthStatus('error');
         } finally {
             setIsSigningIn(false);
@@ -43,7 +43,7 @@ export default function Login() {
     return (
         <div className="bg-gray-900 text-white min-h-screen">
             <Header />
-            
+
             <main className="pt-32 pb-20 px-4 md:px-12">
                 {/* Hero Section */}
                 <section className="max-w-md mx-auto mb-16">
@@ -159,7 +159,7 @@ export default function Login() {
                                 {authStatus === 'error' && (
                                     <div className="text-center p-4 bg-red-900/20 border border-red-500/30 rounded-lg">
                                         <p className="text-red-400 font-medium">
-                                            ✗ User doesn't exist. Please get in touch with us.
+                                            ✗ User doesn&apos;t exist. Please get in touch with us.
                                         </p>
                                         <p className="text-red-300 text-sm mt-2">
                                             Redirecting to contact page...
@@ -206,7 +206,7 @@ export default function Login() {
                             {/* Sign Up Link */}
                             <div className="text-center mt-8">
                                 <p className="text-sm text-gray-400">
-                                    Don't have an account?{' '}
+                                    Don&apos;t have an account?{' '}
                                     <Link href="/signup" className="font-medium text-blue-400 hover:text-blue-300 transition-colors duration-300">
                                         Sign up for free
                                     </Link>
