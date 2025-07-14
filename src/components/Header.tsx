@@ -47,7 +47,7 @@ export default function Header() {
                             xmlns="http://www.w3.org/2000/svg"
                         >
 
-                            <text x="0" y="10" fontSize="12" fontFamily="Poppins, sans-serif" fontWeight="600">
+                            <text x="0" y="10" className="text-xl lg:text-xs" fontFamily="Poppins, sans-serif" fontWeight="600">
                                 LeaseWizard
                             </text>
                         </svg>

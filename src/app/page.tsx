@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ReactCountryFlag from "react-country-flag";
 import Header from "@/components/Header";
 import ExtractDataCard from "@/components/ExtractDataCard";
 import LazyVideo from "@/components/LazyVideo";
@@ -19,7 +20,7 @@ export default function Home() {
                             <div className="flex flex-col lg:grid lg:grid-cols-12 gap-3 z-10 h-full items-center justify-between pt-8 ">
                                 {/* Hero Text Section */}
                                 <section className="text-white px-4 lg:px-6 lg:col-start-3 lg:col-span-8">
-                                    <div className="container mx-auto text-center mb-4 mb-50 lg:mb-8">
+                                    <div className="container mx-auto text-center mb-4 lg:mb-8">
                                         {/* Main Heading */}
                                         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold tracking-tight text-transparent bg-gradient-to-r from-blue-400 via-white to-cyan-300 bg-clip-text mb-4">
                                             AI Lease Contract Management
@@ -68,111 +69,111 @@ export default function Home() {
                             <div className="relative overflow-hidden">
                                 <div className="marquee">
                                     <div className="marquee-content flex space-x-6 md:space-x-10">
-                                        <span className="text-5xl">🇬🇱</span> {/* Albanian */}
-                                        <span className="text-5xl">🇪🇹</span> {/* Amharic */}
-                                        <span className="text-5xl">🇸🇦</span> {/* Arabic */}
-                                        <span className="text-5xl">🇦🇲</span> {/* Armenian */}
-                                        <span className="text-5xl">🇧🇩</span> {/* Bengali */}
-                                        <span className="text-5xl">🇧🇦</span> {/* Bosnian */}
-                                        <span className="text-5xl">🇧🇬</span> {/* Bulgarian */}
-                                        <span className="text-5xl">🇲🇲</span> {/* Burmese */}
-                                        <span className="text-5xl">🇪🇸</span> {/* Catalan */}
-                                        <span className="text-5xl">🇨🇳</span> {/* Chinese */}
-                                        <span className="text-5xl">🇭🇷</span> {/* Croatian */}
-                                        <span className="text-5xl">🇨🇿</span> {/* Czech */}
-                                        <span className="text-5xl">🇩🇰</span> {/* Danish */}
-                                        <span className="text-5xl">🇳🇱</span> {/* Dutch */}
-                                        <span className="text-5xl">🇪🇪</span> {/* Estonian */}
-                                        <span className="text-5xl">🇫🇮</span> {/* Finnish */}
-                                        <span className="text-5xl">🇫🇷</span> {/* French */}
-                                        <span className="text-5xl">🇬🇪</span> {/* Georgian */}
-                                        <span className="text-5xl">🇩🇪</span> {/* German */}
-                                        <span className="text-5xl">🇬🇷</span> {/* Greek */}
-                                        <span className="text-5xl">🇮🇳</span> {/* Gujarati */}
-                                        <span className="text-5xl">🇭🇺</span> {/* Hungarian */}
-                                        <span className="text-5xl">🇮🇸</span> {/* Icelandic */}
-                                        <span className="text-5xl">🇮🇩</span> {/* Indonesian */}
-                                        <span className="text-5xl">🇮🇹</span> {/* Italian */}
-                                        <span className="text-5xl">🇯🇵</span> {/* Japanese */}
-                                        <span className="text-5xl">🇰🇿</span> {/* Kazakh */}
-                                        <span className="text-5xl">🇰🇷</span> {/* Korean */}
-                                        <span className="text-5xl">🇱🇻</span> {/* Latvian */}
-                                        <span className="text-5xl">🇱🇹</span> {/* Lithuanian */}
-                                        <span className="text-5xl">🇲🇰</span> {/* Macedonian */}
-                                        <span className="text-5xl">🇲🇾</span> {/* Malay */}
-                                        <span className="text-5xl">🇲🇳</span> {/* Mongolian */}
-                                        <span className="text-5xl">🇳🇴</span> {/* Norwegian */}
-                                        <span className="text-5xl">🇮🇷</span> {/* Persian */}
-                                        <span className="text-5xl">🇵🇱</span> {/* Polish */}
-                                        <span className="text-5xl">🇵🇹</span> {/* Portuguese */}
-                                        <span className="text-5xl">🇷🇴</span> {/* Romanian */}
-                                        <span className="text-5xl">🇷🇺</span> {/* Russian */}
-                                        <span className="text-5xl">🇷🇸</span> {/* Serbian */}
-                                        <span className="text-5xl">🇸🇰</span> {/* Slovak */}
-                                        <span className="text-5xl">🇸🇮</span> {/* Slovenian */}
-                                        <span className="text-5xl">🇸🇴</span> {/* Somali */}
-                                        <span className="text-5xl">🇪🇸</span> {/* Spanish */}
-                                        <span className="text-5xl">🇰🇪</span> {/* Swahili */}
-                                        <span className="text-5xl">🇸🇪</span> {/* Swedish */}
-                                        <span className="text-5xl">🇵🇭</span> {/* Tagalog */}
-                                        <span className="text-5xl">🇹🇭</span> {/* Thai */}
-                                        <span className="text-5xl">🇹🇷</span> {/* Turkish */}
-                                        <span className="text-5xl">🇺🇦</span> {/* Ukrainian */}
-                                        <span className="text-5xl">🇵🇰</span> {/* Urdu */}
-                                        <span className="text-5xl">🇻🇳</span> {/* Vietnamese */}
+                                        <ReactCountryFlag countryCode="AL" svg style={{ width: '3rem', height: '3rem' }} title="Albanian" />
+                                        <ReactCountryFlag countryCode="ET" svg style={{ width: '3rem', height: '3rem' }} title="Amharic" />
+                                        <ReactCountryFlag countryCode="SA" svg style={{ width: '3rem', height: '3rem' }} title="Arabic" />
+                                        <ReactCountryFlag countryCode="AM" svg style={{ width: '3rem', height: '3rem' }} title="Armenian" />
+                                        <ReactCountryFlag countryCode="BD" svg style={{ width: '3rem', height: '3rem' }} title="Bengali" />
+                                        <ReactCountryFlag countryCode="BA" svg style={{ width: '3rem', height: '3rem' }} title="Bosnian" />
+                                        <ReactCountryFlag countryCode="BG" svg style={{ width: '3rem', height: '3rem' }} title="Bulgarian" />
+                                        <ReactCountryFlag countryCode="MM" svg style={{ width: '3rem', height: '3rem' }} title="Burmese" />
+                                        <ReactCountryFlag countryCode="ES" svg style={{ width: '3rem', height: '3rem' }} title="Catalan" />
+                                        <ReactCountryFlag countryCode="CN" svg style={{ width: '3rem', height: '3rem' }} title="Chinese" />
+                                        <ReactCountryFlag countryCode="HR" svg style={{ width: '3rem', height: '3rem' }} title="Croatian" />
+                                        <ReactCountryFlag countryCode="CZ" svg style={{ width: '3rem', height: '3rem' }} title="Czech" />
+                                        <ReactCountryFlag countryCode="DK" svg style={{ width: '3rem', height: '3rem' }} title="Danish" />
+                                        <ReactCountryFlag countryCode="NL" svg style={{ width: '3rem', height: '3rem' }} title="Dutch" />
+                                        <ReactCountryFlag countryCode="EE" svg style={{ width: '3rem', height: '3rem' }} title="Estonian" />
+                                        <ReactCountryFlag countryCode="FI" svg style={{ width: '3rem', height: '3rem' }} title="Finnish" />
+                                        <ReactCountryFlag countryCode="FR" svg style={{ width: '3rem', height: '3rem' }} title="French" />
+                                        <ReactCountryFlag countryCode="GE" svg style={{ width: '3rem', height: '3rem' }} title="Georgian" />
+                                        <ReactCountryFlag countryCode="DE" svg style={{ width: '3rem', height: '3rem' }} title="German" />
+                                        <ReactCountryFlag countryCode="GR" svg style={{ width: '3rem', height: '3rem' }} title="Greek" />
+                                        <ReactCountryFlag countryCode="IN" svg style={{ width: '3rem', height: '3rem' }} title="Gujarati" />
+                                        <ReactCountryFlag countryCode="HU" svg style={{ width: '3rem', height: '3rem' }} title="Hungarian" />
+                                        <ReactCountryFlag countryCode="IS" svg style={{ width: '3rem', height: '3rem' }} title="Icelandic" />
+                                        <ReactCountryFlag countryCode="ID" svg style={{ width: '3rem', height: '3rem' }} title="Indonesian" />
+                                        <ReactCountryFlag countryCode="IT" svg style={{ width: '3rem', height: '3rem' }} title="Italian" />
+                                        <ReactCountryFlag countryCode="JP" svg style={{ width: '3rem', height: '3rem' }} title="Japanese" />
+                                        <ReactCountryFlag countryCode="KZ" svg style={{ width: '3rem', height: '3rem' }} title="Kazakh" />
+                                        <ReactCountryFlag countryCode="KR" svg style={{ width: '3rem', height: '3rem' }} title="Korean" />
+                                        <ReactCountryFlag countryCode="LV" svg style={{ width: '3rem', height: '3rem' }} title="Latvian" />
+                                        <ReactCountryFlag countryCode="LT" svg style={{ width: '3rem', height: '3rem' }} title="Lithuanian" />
+                                        <ReactCountryFlag countryCode="MK" svg style={{ width: '3rem', height: '3rem' }} title="Macedonian" />
+                                        <ReactCountryFlag countryCode="MY" svg style={{ width: '3rem', height: '3rem' }} title="Malay" />
+                                        <ReactCountryFlag countryCode="MN" svg style={{ width: '3rem', height: '3rem' }} title="Mongolian" />
+                                        <ReactCountryFlag countryCode="NO" svg style={{ width: '3rem', height: '3rem' }} title="Norwegian" />
+                                        <ReactCountryFlag countryCode="IR" svg style={{ width: '3rem', height: '3rem' }} title="Persian" />
+                                        <ReactCountryFlag countryCode="PL" svg style={{ width: '3rem', height: '3rem' }} title="Polish" />
+                                        <ReactCountryFlag countryCode="PT" svg style={{ width: '3rem', height: '3rem' }} title="Portuguese" />
+                                        <ReactCountryFlag countryCode="RO" svg style={{ width: '3rem', height: '3rem' }} title="Romanian" />
+                                        <ReactCountryFlag countryCode="RU" svg style={{ width: '3rem', height: '3rem' }} title="Russian" />
+                                        <ReactCountryFlag countryCode="RS" svg style={{ width: '3rem', height: '3rem' }} title="Serbian" />
+                                        <ReactCountryFlag countryCode="SK" svg style={{ width: '3rem', height: '3rem' }} title="Slovak" />
+                                        <ReactCountryFlag countryCode="SI" svg style={{ width: '3rem', height: '3rem' }} title="Slovenian" />
+                                        <ReactCountryFlag countryCode="SO" svg style={{ width: '3rem', height: '3rem' }} title="Somali" />
+                                        <ReactCountryFlag countryCode="ES" svg style={{ width: '3rem', height: '3rem' }} title="Spanish" />
+                                        <ReactCountryFlag countryCode="KE" svg style={{ width: '3rem', height: '3rem' }} title="Swahili" />
+                                        <ReactCountryFlag countryCode="SE" svg style={{ width: '3rem', height: '3rem' }} title="Swedish" />
+                                        <ReactCountryFlag countryCode="PH" svg style={{ width: '3rem', height: '3rem' }} title="Tagalog" />
+                                        <ReactCountryFlag countryCode="TH" svg style={{ width: '3rem', height: '3rem' }} title="Thai" />
+                                        <ReactCountryFlag countryCode="TR" svg style={{ width: '3rem', height: '3rem' }} title="Turkish" />
+                                        <ReactCountryFlag countryCode="UA" svg style={{ width: '3rem', height: '3rem' }} title="Ukrainian" />
+                                        <ReactCountryFlag countryCode="PK" svg style={{ width: '3rem', height: '3rem' }} title="Urdu" />
+                                        <ReactCountryFlag countryCode="VN" svg style={{ width: '3rem', height: '3rem' }} title="Vietnamese" />
                                         {/* Duplicate the sequence for continuous scrolling */}
-                                        <span className="text-5xl">🇬🇱</span> {/* Albanian */}
-                                        <span className="text-5xl">🇪🇹</span> {/* Amharic */}
-                                        <span className="text-5xl">🇸🇦</span> {/* Arabic */}
-                                        <span className="text-5xl">🇦🇲</span> {/* Armenian */}
-                                        <span className="text-5xl">🇧🇩</span> {/* Bengali */}
-                                        <span className="text-5xl">🇧🇦</span> {/* Bosnian */}
-                                        <span className="text-5xl">🇧🇬</span> {/* Bulgarian */}
-                                        <span className="text-5xl">🇲🇲</span> {/* Burmese */}
-                                        <span className="text-5xl">🇪🇸</span> {/* Catalan */}
-                                        <span className="text-5xl">🇨🇳</span> {/* Chinese */}
-                                        <span className="text-5xl">🇭🇷</span> {/* Croatian */}
-                                        <span className="text-5xl">🇨🇿</span> {/* Czech */}
-                                        <span className="text-5xl">🇩🇰</span> {/* Danish */}
-                                        <span className="text-5xl">🇳🇱</span> {/* Dutch */}
-                                        <span className="text-5xl">🇪🇪</span> {/* Estonian */}
-                                        <span className="text-5xl">🇫🇮</span> {/* Finnish */}
-                                        <span className="text-5xl">🇫🇷</span> {/* French */}
-                                        <span className="text-5xl">🇬🇪</span> {/* Georgian */}
-                                        <span className="text-5xl">🇩🇪</span> {/* German */}
-                                        <span className="text-5xl">🇬🇷</span> {/* Greek */}
-                                        <span className="text-5xl">🇮🇳</span> {/* Gujarati */}
-                                        <span className="text-5xl">🇭🇺</span> {/* Hungarian */}
-                                        <span className="text-5xl">🇮🇸</span> {/* Icelandic */}
-                                        <span className="text-5xl">🇮🇩</span> {/* Indonesian */}
-                                        <span className="text-5xl">🇮🇹</span> {/* Italian */}
-                                        <span className="text-5xl">🇯🇵</span> {/* Japanese */}
-                                        <span className="text-5xl">🇰🇿</span> {/* Kazakh */}
-                                        <span className="text-5xl">🇰🇷</span> {/* Korean */}
-                                        <span className="text-5xl">🇱🇻</span> {/* Latvian */}
-                                        <span className="text-5xl">🇱🇹</span> {/* Lithuanian */}
-                                        <span className="text-5xl">🇲🇰</span> {/* Macedonian */}
-                                        <span className="text-5xl">🇲🇾</span> {/* Malay */}
-                                        <span className="text-5xl">🇲🇳</span> {/* Mongolian */}
-                                        <span className="text-5xl">🇳🇴</span> {/* Norwegian */}
-                                        <span className="text-5xl">🇮🇷</span> {/* Persian */}
-                                        <span className="text-5xl">🇵🇱</span> {/* Polish */}
-                                        <span className="text-5xl">🇵🇹</span> {/* Portuguese */}
-                                        <span className="text-5xl">🇷🇴</span> {/* Romanian */}
-                                        <span className="text-5xl">🇷🇺</span> {/* Russian */}
-                                        <span className="text-5xl">🇷🇸</span> {/* Serbian */}
-                                        <span className="text-5xl">🇸🇰</span> {/* Slovak */}
-                                        <span className="text-5xl">🇸🇮</span> {/* Slovenian */}
-                                        <span className="text-5xl">🇸🇴</span> {/* Somali */}
-                                        <span className="text-5xl">🇪🇸</span> {/* Spanish */}
-                                        <span className="text-5xl">🇰🇪</span> {/* Swahili */}
-                                        <span className="text-5xl">🇸🇪</span> {/* Swedish */}
-                                        <span className="text-5xl">🇵🇭</span> {/* Tagalog */}
-                                        <span className="text-5xl">🇹🇭</span> {/* Thai */}
-                                        <span className="text-5xl">🇹🇷</span> {/* Turkish */}
-                                        <span className="text-5xl">🇺🇦</span> {/* Ukrainian */}
-                                        <span className="text-5xl">🇵🇰</span> {/* Urdu */}
-                                        <span className="text-5xl">🇻🇳</span> {/* Vietnamese */}
+                                        <ReactCountryFlag countryCode="AL" svg style={{ width: '3rem', height: '3rem' }} title="Albanian" />
+                                        <ReactCountryFlag countryCode="ET" svg style={{ width: '3rem', height: '3rem' }} title="Amharic" />
+                                        <ReactCountryFlag countryCode="SA" svg style={{ width: '3rem', height: '3rem' }} title="Arabic" />
+                                        <ReactCountryFlag countryCode="AM" svg style={{ width: '3rem', height: '3rem' }} title="Armenian" />
+                                        <ReactCountryFlag countryCode="BD" svg style={{ width: '3rem', height: '3rem' }} title="Bengali" />
+                                        <ReactCountryFlag countryCode="BA" svg style={{ width: '3rem', height: '3rem' }} title="Bosnian" />
+                                        <ReactCountryFlag countryCode="BG" svg style={{ width: '3rem', height: '3rem' }} title="Bulgarian" />
+                                        <ReactCountryFlag countryCode="MM" svg style={{ width: '3rem', height: '3rem' }} title="Burmese" />
+                                        <ReactCountryFlag countryCode="ES" svg style={{ width: '3rem', height: '3rem' }} title="Catalan" />
+                                        <ReactCountryFlag countryCode="CN" svg style={{ width: '3rem', height: '3rem' }} title="Chinese" />
+                                        <ReactCountryFlag countryCode="HR" svg style={{ width: '3rem', height: '3rem' }} title="Croatian" />
+                                        <ReactCountryFlag countryCode="CZ" svg style={{ width: '3rem', height: '3rem' }} title="Czech" />
+                                        <ReactCountryFlag countryCode="DK" svg style={{ width: '3rem', height: '3rem' }} title="Danish" />
+                                        <ReactCountryFlag countryCode="NL" svg style={{ width: '3rem', height: '3rem' }} title="Dutch" />
+                                        <ReactCountryFlag countryCode="EE" svg style={{ width: '3rem', height: '3rem' }} title="Estonian" />
+                                        <ReactCountryFlag countryCode="FI" svg style={{ width: '3rem', height: '3rem' }} title="Finnish" />
+                                        <ReactCountryFlag countryCode="FR" svg style={{ width: '3rem', height: '3rem' }} title="French" />
+                                        <ReactCountryFlag countryCode="GE" svg style={{ width: '3rem', height: '3rem' }} title="Georgian" />
+                                        <ReactCountryFlag countryCode="DE" svg style={{ width: '3rem', height: '3rem' }} title="German" />
+                                        <ReactCountryFlag countryCode="GR" svg style={{ width: '3rem', height: '3rem' }} title="Greek" />
+                                        <ReactCountryFlag countryCode="IN" svg style={{ width: '3rem', height: '3rem' }} title="Gujarati" />
+                                        <ReactCountryFlag countryCode="HU" svg style={{ width: '3rem', height: '3rem' }} title="Hungarian" />
+                                        <ReactCountryFlag countryCode="IS" svg style={{ width: '3rem', height: '3rem' }} title="Icelandic" />
+                                        <ReactCountryFlag countryCode="ID" svg style={{ width: '3rem', height: '3rem' }} title="Indonesian" />
+                                        <ReactCountryFlag countryCode="IT" svg style={{ width: '3rem', height: '3rem' }} title="Italian" />
+                                        <ReactCountryFlag countryCode="JP" svg style={{ width: '3rem', height: '3rem' }} title="Japanese" />
+                                        <ReactCountryFlag countryCode="KZ" svg style={{ width: '3rem', height: '3rem' }} title="Kazakh" />
+                                        <ReactCountryFlag countryCode="KR" svg style={{ width: '3rem', height: '3rem' }} title="Korean" />
+                                        <ReactCountryFlag countryCode="LV" svg style={{ width: '3rem', height: '3rem' }} title="Latvian" />
+                                        <ReactCountryFlag countryCode="LT" svg style={{ width: '3rem', height: '3rem' }} title="Lithuanian" />
+                                        <ReactCountryFlag countryCode="MK" svg style={{ width: '3rem', height: '3rem' }} title="Macedonian" />
+                                        <ReactCountryFlag countryCode="MY" svg style={{ width: '3rem', height: '3rem' }} title="Malay" />
+                                        <ReactCountryFlag countryCode="MN" svg style={{ width: '3rem', height: '3rem' }} title="Mongolian" />
+                                        <ReactCountryFlag countryCode="NO" svg style={{ width: '3rem', height: '3rem' }} title="Norwegian" />
+                                        <ReactCountryFlag countryCode="IR" svg style={{ width: '3rem', height: '3rem' }} title="Persian" />
+                                        <ReactCountryFlag countryCode="PL" svg style={{ width: '3rem', height: '3rem' }} title="Polish" />
+                                        <ReactCountryFlag countryCode="PT" svg style={{ width: '3rem', height: '3rem' }} title="Portuguese" />
+                                        <ReactCountryFlag countryCode="RO" svg style={{ width: '3rem', height: '3rem' }} title="Romanian" />
+                                        <ReactCountryFlag countryCode="RU" svg style={{ width: '3rem', height: '3rem' }} title="Russian" />
+                                        <ReactCountryFlag countryCode="RS" svg style={{ width: '3rem', height: '3rem' }} title="Serbian" />
+                                        <ReactCountryFlag countryCode="SK" svg style={{ width: '3rem', height: '3rem' }} title="Slovak" />
+                                        <ReactCountryFlag countryCode="SI" svg style={{ width: '3rem', height: '3rem' }} title="Slovenian" />
+                                        <ReactCountryFlag countryCode="SO" svg style={{ width: '3rem', height: '3rem' }} title="Somali" />
+                                        <ReactCountryFlag countryCode="ES" svg style={{ width: '3rem', height: '3rem' }} title="Spanish" />
+                                        <ReactCountryFlag countryCode="KE" svg style={{ width: '3rem', height: '3rem' }} title="Swahili" />
+                                        <ReactCountryFlag countryCode="SE" svg style={{ width: '3rem', height: '3rem' }} title="Swedish" />
+                                        <ReactCountryFlag countryCode="PH" svg style={{ width: '3rem', height: '3rem' }} title="Tagalog" />
+                                        <ReactCountryFlag countryCode="TH" svg style={{ width: '3rem', height: '3rem' }} title="Thai" />
+                                        <ReactCountryFlag countryCode="TR" svg style={{ width: '3rem', height: '3rem' }} title="Turkish" />
+                                        <ReactCountryFlag countryCode="UA" svg style={{ width: '3rem', height: '3rem' }} title="Ukrainian" />
+                                        <ReactCountryFlag countryCode="PK" svg style={{ width: '3rem', height: '3rem' }} title="Urdu" />
+                                        <ReactCountryFlag countryCode="VN" svg style={{ width: '3rem', height: '3rem' }} title="Vietnamese" />
                                     </div>
                                 </div>
                                 <div className="absolute inset-0 pointer-events-none">
@@ -198,10 +199,10 @@ export default function Home() {
                         </div>
 
                         {/* Video Container */}
-                        <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl px-4 pt-4 sm:px-6 sm:pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670]  lg:h-[600px] lg:p-0 shadow-2xl border border-gray-700">
+                        <div className="relative w-full overflow-hidden rounded-2xl sm:rounded-3xl px-4 pt-4 sm:px-6 pt-6 md:px-8 md:pt-8 lg:aspect-[1296/670]  lg:h-[600px] lg:p-0 shadow-2xl border border-gray-700">
 
                             {/* Video Container */}
-                            <div className="relative bottom-0 right-0 left-auto sm:left-1/2 sm:-translate-x-1/2 z-10 overflow-hidden rounded-t-lg w-[200%] sm:w-[90%] h-full flex items-center justify-end sm:justify-center lg:absolute lg:pt-20">
+                            <div className="relative bottom-0 right-0 left-auto sm:left-1/2 sm:-translate-x-1/2 z-10 overflow-hidden rounded-t-lg w-[200%] sm:w-[90%] h-full flex items-center justify-end sm:justify-start lg:absolute lg:pt-20">
                                 <LazyVideo
                                     src="/static/videos/abstraction.mp4"
                                     className="rounded-lg w-full object-cover object-right"
@@ -409,9 +410,9 @@ export default function Home() {
                                         <Image
                                             src="/mockup_table.svg"
                                             alt="Table Mockup"
-                                            fill
-                                            className="object-cover z-10"
-                                            style={{ width: '110%' }}
+                                            width={500}
+                                            height={400}
+                                            className="absolute inset-0 w-[110%] h-full object-cover z-10"
                                         />
                                         {/* ExtractDataCard on top */}
                                         <div className="relative z-20 transform -translate-x-6 translate-y-1">
@@ -763,7 +764,7 @@ export default function Home() {
                                     </div>
                                     {/* Icon 3 */}
                                     <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-3 sm:p-4 rounded-full group transform transition-all duration-300 hover:-translate-y-3 hover:shadow-lg hover:shadow-green-500/25 relative border border-gray-600 hover:border-green-500/30">
-                                        <Image src="https://img.icons8.com/color/48/slack-new.png" alt="Slack" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10" />
+                                        <Image src="/static/logos/slack.png" alt="Slack" width={40} height={40} className="w-8 h-8 sm:w-10 sm:h-10" />
                                         <span className="absolute bottom-full mb-2 w-max px-2 sm:px-3 py-1 sm:py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs sm:text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 font-medium">Slack</span>
                                     </div>
                                     {/* Icon 4 */}
