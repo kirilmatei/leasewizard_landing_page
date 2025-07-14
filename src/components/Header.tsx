@@ -41,13 +41,13 @@ export default function Header() {
                             />
                         </div>
                         <svg
-                            className="h-[13px] text-white lg:h-[17px]"
+                            className="h-[14px] text-white lg:h-[16px]"
                             fill="currentColor"
                             viewBox="0 0 120 13"
                             xmlns="http://www.w3.org/2000/svg"
                         >
 
-                            <text x="0" y="10" className="text-xl lg:text-xs" fontFamily="Poppins, sans-serif" fontWeight="600">
+                            <text x="0" y="10" fontSize="14" fontFamily="Poppins, sans-serif" fontWeight="600">
                                 LeaseWizard
                             </text>
                         </svg>
