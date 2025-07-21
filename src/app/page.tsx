@@ -23,7 +23,7 @@ export default function Home() {
                                     <div className="container mx-auto text-center mb-4 lg:mb-8">
                                         {/* Main Heading */}
                                         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold tracking-tight text-transparent bg-gradient-to-r from-blue-400 via-white to-cyan-300 bg-clip-text mb-4">
-                                            AI Lease Contract Management
+                                            AI Lease Contract Administration
                                         </h2>
                                         {/* Description */}
                                         <p className="text-base sm:text-lg font-light mb-6 text-gray-200 max-w-xl lg:max-w-3xl mx-auto px-2">
