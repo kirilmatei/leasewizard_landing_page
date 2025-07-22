@@ -25,22 +25,34 @@ export default function Contact() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setSubmitStatus('idle');
 
         try {
-            // Simulate form submission - in real implementation, this would send to your backend
-            await new Promise(resolve => setTimeout(resolve, 2000));
-
-            // For demo purposes, just show success
-            setSubmitStatus('success');
-            setFormData({
-                name: '',
-                email: '',
-                company: '',
-                phone: '',
-                subject: '',
-                message: ''
+            // Send form data to API route
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
             });
-        } catch {
+
+            if (response.ok) {
+                setSubmitStatus('success');
+                // Clear form on successful submission
+                setFormData({
+                    name: '',
+                    email: '',
+                    company: '',
+                    phone: '',
+                    subject: '',
+                    message: ''
+                });
+            } else {
+                setSubmitStatus('error');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
             setSubmitStatus('error');
         } finally {
             setIsSubmitting(false);
