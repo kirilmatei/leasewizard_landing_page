@@ -3,46 +3,46 @@ import nodemailer from 'nodemailer';
 
 // Interface for the contact form data
 interface ContactFormData {
-    name: string;
-    email: string;
-    company?: string;
-    phone?: string;
-    subject: string;
-    message: string;
+  name: string;
+  email: string;
+  company?: string;
+  phone?: string;
+  subject: string;
+  message: string;
 }
 
 export async function POST(request: NextRequest) {
-    try {
-        // Parse the request body
-        const body: ContactFormData = await request.json();
+  try {
+    // Parse the request body
+    const body: ContactFormData = await request.json();
 
-        // Validate required fields
-        if (!body.name || !body.email || !body.subject || !body.message) {
-            return NextResponse.json(
-                { error: 'Missing required fields' },
-                { status: 400 }
-            );
-        }
+    // Validate required fields
+    if (!body.name || !body.email || !body.subject || !body.message) {
+      return NextResponse.json(
+        { error: 'Missing required fields' },
+        { status: 400 }
+      );
+    }
 
-        // Create nodemailer transporter
-        // Note: You'll need to configure these environment variables
-        const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_HOST || 'smtp.gmail.com',
-            port: parseInt(process.env.SMTP_PORT || '587'),
-            secure: false, // true for 465, false for other ports
-            auth: {
-                user: process.env.SMTP_USER,
-                pass: process.env.SMTP_PASSWORD,
-            },
-        });
+    // Create nodemailer transporter
+    // Note: You'll need to configure these environment variables
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || 'smtp.porkbun.com',
+      port: parseInt(process.env.SMTP_PORT || '465'),
+      secure: true, // true for 465 (SSL), false for other ports
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
+      },
+    });
 
-        // Prepare email content
-        const mailOptions = {
-            from: `"${body.name}" <${process.env.SMTP_USER}>`, // sender address
-            to: 'info@leasewizard.ai', // recipient
-            replyTo: body.email, // reply to the user's email
-            subject: `Contact Form: ${body.subject}`,
-            html: `
+    // Prepare email content
+    const mailOptions = {
+      from: `"${body.name}" <${process.env.SMTP_USER}>`, // sender address
+      to: 'info@leasewizard.ai', // recipient
+      replyTo: body.email, // reply to the user's email
+      subject: `Contact Form: ${body.subject}`,
+      html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #1f2937; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">
             New Contact Form Submission
@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
           </div>
         </div>
       `,
-            text: `
+      text: `
 Contact Form Submission
 
 Name: ${body.name}
@@ -85,21 +85,21 @@ ${body.message}
 ---
 This message was sent from the LeaseWizard contact form.
       `,
-        };
+    };
 
-        // Send email
-        await transporter.sendMail(mailOptions);
+    // Send email
+    await transporter.sendMail(mailOptions);
 
-        return NextResponse.json(
-            { message: 'Email sent successfully' },
-            { status: 200 }
-        );
+    return NextResponse.json(
+      { message: 'Email sent successfully' },
+      { status: 200 }
+    );
 
-    } catch (error) {
-        console.error('Error sending email:', error);
-        return NextResponse.json(
-            { error: 'Failed to send email' },
-            { status: 500 }
-        );
-    }
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return NextResponse.json(
+      { error: 'Failed to send email' },
+      { status: 500 }
+    );
+  }
 } 
